@@ -10,11 +10,13 @@
 * 김성훈(백엔드)  
 * 문경덕(프론트엔드)  
 
-### 📌 초기설계 https://docs.google.com/presentation/d/1dujTyRFqkYqzOplc9_zh42UvmAeWs1s17Ty4s2hJIzk/edit?usp=sharing
+### 📌 초기설계 
+https://docs.google.com/presentation/d/1dujTyRFqkYqzOplc9_zh42UvmAeWs1s17Ty4s2hJIzk/edit?usp=sharing
 
 
 
-### 📌 데이터 취합: https://docs.google.com/spreadsheets/d/1q994o-xB1FENlLwMUI-bu6nKdIKYtGwIFEnfIJzly9w/edit?usp=sharing
+### 📌 데이터 취합
+https://docs.google.com/spreadsheets/d/1q994o-xB1FENlLwMUI-bu6nKdIKYtGwIFEnfIJzly9w/edit?usp=sharing
 
 
 ### 📌 문제를 이렇게 해결했어요!
