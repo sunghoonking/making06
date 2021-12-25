@@ -5,14 +5,16 @@
 2021년 09월 03일 ~ 2021년 9월 16일
 
 ### 🧙 맴버구성  
-* 최은빈  
-* 김민  
-* 김성훈  
-* 문경덕  
+* 최은빈(백엔드)  
+* 김민(프론트엔드)  
+* 김성훈(백엔드)  
+* 문경덕(프론트엔드)  
 
-### 📌 기술 선택 이유! - <a href="https://github.com/Dae-Hwan/sparta-project/wiki/%EA%B8%B0%EC%88%A0-%EC%84%A0%ED%83%9D-%EC%9D%B4%EC%9C%A0" >상세보기 - WIKI 이동</a>
-
-### 📌 주요 기능 - <a href="https://github.com/Dae-Hwan/sparta-project/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C" >상세보기 - WIKI 이동</a> 
+### 📌 초기설계 https://docs.google.com/presentation/d/1dujTyRFqkYqzOplc9_zh42UvmAeWs1s17Ty4s2hJIzk/edit?usp=sharing
 
 
-### 📌 문제를 이렇게 해결했어요! - <a href="https://github.com/Dae-Hwan/sparta-project/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85" >상세보기 - WIKI 이동</a> 
+
+### 📌 데이터 취합: https://docs.google.com/spreadsheets/d/1q994o-xB1FENlLwMUI-bu6nKdIKYtGwIFEnfIJzly9w/edit?usp=sharing
+
+
+### 📌 문제를 이렇게 해결했어요!
