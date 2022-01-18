@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 from pymongo import MongoClient
 
-client = MongoClient('localhost', 27017)
+client = MongoClient('mongodb://test:test@13.125.45.230', 27017)
 db = client.highwayproject
 
 @app.route('/')
@@ -55,7 +55,7 @@ def showrecommend():
 
 @app.route('/api/list', methods=['GET'])
 def show_stars():
-    movie_star = list(db.lats1.find({}, {'_id': False}).sort("like", -1).limit(3))
+    movie_star = list(db.lats1.find({}, {'_id': False}).sort("like", -1).limit(4))
     return jsonify({'movie_stars': movie_star})
 
 @app.route('/api/lists', methods=['GET'])
@@ -63,6 +63,10 @@ def show_starss():
     movie_star = list(db.lats1.find({}, {'_id': False}).sort("like", -1))
     return jsonify({'movie_starss': movie_star})
 
+@app.route('/main_info', methods=['GET'])
+def parking_info():
+    parking = list(db.lats1.find({}, {'_id': False}))
+    return jsonify({'parking_all':parking})
 
 @app.route('/api/like', methods=['POST'])
 def like_highway():
@@ -77,11 +81,71 @@ def like_highway():
 
     return jsonify({'msg': '좋아요 완료!'})
 
-@app.route('/main', methods=['GET'])
-def read_reviews():
-    latlng = list(db.latlng.find({}, {'_id': False}))
-    return jsonify({'latlng_all':latlng})
+
+#고속도로 DB
+@app.route('/main/01', methods=['GET'])
+def fast01():
+    latlng1 = list(db.latlng1.find({}, {'_id': False}))
+    return jsonify({'latlng_all1':latlng1})
+
+@app.route('/main/02', methods=['GET'])
+def fast02():
+    latlng2 = list(db.latlng2.find({}, {'_id': False}))
+    return jsonify({'latlng_all2':latlng2})
+
+@app.route('/main/03', methods=['GET'])
+def fast03():
+    latlng3 = list(db.latlng3.find({}, {'_id': False}))
+    return jsonify({'latlng_all3':latlng3})
+
+@app.route('/main/04', methods=['GET'])
+def fast04():
+    latlng4 = list(db.latlng4.find({}, {'_id': False}))
+    return jsonify({'latlng_all4':latlng4})
+
+@app.route('/main/05', methods=['GET'])
+def fast05():
+    latlng5 = list(db.latlng5.find({}, {'_id': False}))
+    return jsonify({'latlng_all5':latlng5})
+
+@app.route('/main/06', methods=['GET'])
+def fast06():
+    latlng6 = list(db.latlng6.find({}, {'_id': False}))
+    return jsonify({'latlng_all6':latlng6})
+
+@app.route('/main/07', methods=['GET'])
+def fast07():
+    latlng7 = list(db.latlng7.find({}, {'_id': False}))
+    return jsonify({'latlng_all7':latlng7})
+
+@app.route('/main/08', methods=['GET'])
+def fast08():
+    latlng8 = list(db.latlng8.find({}, {'_id': False}))
+    return jsonify({'latlng_all8':latlng8})
+
+@app.route('/main/09', methods=['GET'])
+def fast09():
+    latlng9 = list(db.latlng9.find({}, {'_id': False}))
+    return jsonify({'latlng_all9':latlng9})
+
+@app.route('/main/10', methods=['GET'])
+def fast10():
+    latlng10 = list(db.latlng10.find({}, {'_id': False}))
+    return jsonify({'latlng_all10':latlng10})
+
+@app.route('/main/11', methods=['GET'])
+def fast11():
+    latlng11 = list(db.latlng11.find({}, {'_id': False}))
+    return jsonify({'latlng_all11':latlng11})
+
+@app.route('/main/12', methods=['GET'])
+def fast12():
+    latlng12 = list(db.latlng12.find({}, {'_id': False}))
+    return jsonify({'latlng_all12':latlng12})
+
+
+
+
 
 if __name__ == '__main__':
-   app.run('0.0.0.0',port=5000,debug=True)
-
+    app.run('0.0.0.0', port=5000, debug=True)
